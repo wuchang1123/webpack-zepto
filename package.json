@@ -1,0 +1,13 @@
+{
+    "name": "webpack-zepto",
+    "version": "1.2.0",
+    "main": "dist/zepto.js",
+    "scripts": {
+        "start": "coffee test/server.coffee"
+    },
+    "devDependencies": {
+        "zepto": "^1.2.0",
+        "exports-loader": "^0.7.0",
+        "script-loader": "^0.7.2",
+    }
+}
