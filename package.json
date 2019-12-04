@@ -1,13 +1,26 @@
 {
-    "name": "webpack-zepto",
-    "version": "1.2.0",
-    "main": "dist/zepto.js",
-    "scripts": {
-        "start": "coffee test/server.coffee"
-    },
-    "devDependencies": {
-        "zepto": "^1.2.0",
-        "exports-loader": "^0.7.0",
-        "script-loader": "^0.7.2",
-    }
+  "name": "webpack-zepto",
+  "version": "1.2.0",
+  "main": "dist/zepto.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-vue-app": "^2.0.0",
+    "exports-loader": "^0.7.0",
+    "script-loader": "^0.7.2",
+    "zepto": "^1.2.0",
+    "webpack": "^4.11.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "browserslist": [
+    "last 10 version",
+    "ie > 8",
+    "> 4%",
+    "iOS >= 8",
+    "Firefox >= 20",
+    "Android > 4.4"
+  ]
 }

@@ -1,15 +1,16 @@
-// Zepto.cookie plugin
-//
-// Copyright (c) 2010, 2012
-// @author Klaus Hartl (stilbuero.de)
-// @author Daniel Lacy (daniellacy.com)
+/*!
+ * Zepto.cookie plugin
+ *
+ * Copyright (c) 2010, 2012
+ * @author Klaus Hartl (stilbuero.de)
+ * @author Daniel Lacy (daniellacy.com)
 //
 // Dual licensed under the MIT and GPL licenses:
 // http://www.opensource.org/licenses/mit-license.php
 // http://www.gnu.org/licenses/gpl.html
-import _zepto from 'zepto';
+*/
+export default function($) {
 
-;(function($){
     $.extend($.fn, {
         cookie : function (key, value, options) {
             var days, time, result, decode
@@ -49,4 +50,4 @@ import _zepto from 'zepto';
         }
 
     })
-})(_zepto)
+}
