@@ -9,7 +9,7 @@
 // http://www.opensource.org/licenses/mit-license.php
 // http://www.gnu.org/licenses/gpl.html
 */
-export default function($) {
+export const extend = function($) {
 
     $.extend($.fn, {
         cookie : function (key, value, options) {

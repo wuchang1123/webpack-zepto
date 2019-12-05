@@ -9,5 +9,4 @@
 // Dual licensed under the MIT and GPL licenses:
 // http://www.opensource.org/licenses/mit-license.php
 // http://www.gnu.org/licenses/gpl.html
-
 */t.d(n,"Zepto",(function(){return a})),t.d(n,"$",(function(){return s})),function(e){e.extend(e.fn,{cookie:function(n,t,r){var a,s,o,i;return arguments.length>1&&"[object Object]"!==String(t)?(r=e.extend({},r),null==t&&(r.expires=-1),"number"==typeof r.expires&&(a=24*r.expires*60*60*1e3,(s=r.expires=new Date).setTime(s.getTime()+a)),t=String(t),document.cookie=[encodeURIComponent(n),"=",r.raw?t:encodeURIComponent(t),r.expires?"; expires="+r.expires.toUTCString():"",r.path?"; path="+r.path:"",r.domain?"; domain="+r.domain:"",r.secure?"; secure":""].join("")):(i=(r=t||{}).raw?function(e){return e}:decodeURIComponent,(o=new RegExp("(?:^|; )"+encodeURIComponent(n)+"=([^;]*)").exec(document.cookie))?i(o[1]):null)}})}(r.Zepto);var a=r.Zepto,s=r.Zepto}])}));

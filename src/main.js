@@ -1,11 +1,8 @@
 // import Zepto from 'zepto';
 import { Zepto as _zepto } from 'zepto';
-//require('exports-loader?$,Zepto!zepto');
-import _cookie from './plugin/zepto.cookie.js';
+import {extend as extendZepto} from './plugin/zepto.cookie.js';
 
-_cookie(_zepto);
-
-// console.log(_zepto.fn.cookie);
+extendZepto(_zepto);
 
 export const Zepto = _zepto;
 export const $ = _zepto;

@@ -1,7 +1,7 @@
 {
   "name": "webpack-zepto",
   "version": "1.2.0",
-  "main": "dist/zepto.js",
+  "main": "dist/webpack-zepto.js",
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
