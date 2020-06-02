@@ -39,7 +39,6 @@ module.exports = {
     output: {
         path: dist,
         filename: `[name].js`,
-        library: 'webpackZepto',
-        libraryTarget: 'umd'
+        libraryTarget: 'commonjs2'
     },
 }

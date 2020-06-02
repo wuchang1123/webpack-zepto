@@ -6,3 +6,5 @@ extendZepto(_zepto);
 
 export const Zepto = _zepto;
 export const $ = _zepto;
+
+export default _zepto;
