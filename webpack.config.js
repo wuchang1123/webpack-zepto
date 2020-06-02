@@ -4,7 +4,7 @@ const src      = path.resolve(process.cwd(), 'src'); // 源码目录
 const dist     = path.resolve(process.cwd(), 'dist');
 
 module.exports = {
-    mode: 'production',
+    mode: 'production',//development
 
     entry: {
         'webpack-zepto': './src/main.js'
@@ -14,7 +14,7 @@ module.exports = {
         rules: [
             {
                 test: /zepto(\.js|\.min\.js)$/,
-                use: ['exports-loader?$,Zepto', 'script-loader']
+                use: ['exports-loader?$=window.Zepto,Zepto=window.Zepto', 'script-loader']
             },
             {
                 test: /\.js$/,
